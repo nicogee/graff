@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+
+  h1 { font-size: 1.5 * @scale * 1rem; line-height: 1.5 * @leading; margin-top: 2 * @leading; }
+  h2 { font-size: 1.6875 * 1rem; line-height: 1.5 * @leading; margin-top: .5 * @leading; margin-bottom: @leading * 0.5;}
+
+
+  .header-start .and {
+    font-size: 7rem;
+    bottom: 70px;
+  }
+  .navbar {
+    padding-left: 1rem;
+  }
+  
+  .post, .post-footer {
+    padding: 1rem;
+  }
+
+   .author-info {
+    margin: 2rem 1rem 0;
+    hr:before {padding-left: 1em}
+    .author-box {
+      display: block;
+      .avatar {
+        margin: 0 auto 2em;
+      }
+    }
+   }
+
+   #work {
+
+    .work-wrap {
+      padding-top: 0;
+      margin-top: 2rem;
+    }
+
+    .work-entry {
+      flex-flow: wrap;
+
+     .work-image {
+      flex: 1 1 100%;
+      img {
+        width: 100%;
+        margin: auto;
+      }
+     }
+
+     .work-body {
+      width: 100%;
+     }
+
+     }
+
+   }
+
+}
