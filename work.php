@@ -44,6 +44,12 @@ Template Name: Work
 
         <?php endwhile; ?>
       <?php endif; ?>
+      <?php if(function_exists('get_field') && get_field('cta_box') && get_field('cta_box')[0] == 'enable'): ?>
+        <div class="cta-box wrap">
+          <h3><?php the_field('cta_title'); ?></h3>
+          <?php the_field('cta_description'); ?>
+        </div>
+      <?php endif; ?>
 
     <?php endwhile; endif; ?>
 
