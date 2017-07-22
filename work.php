@@ -36,7 +36,7 @@ Template Name: Work
                 <div class="work-body">
                   <h2 class="work-title"><?php the_sub_field('work_title') ?></h2>
                   <?php the_sub_field('work_description') ?>
-                  <p><a href="<?php the_sub_field('work_link_url') ?>">visit website &raquo;</a></p>
+                  <p><a href="<?php the_sub_field('work_link_url') ?>"><?php the_sub_field('work_link_text') ?></a></p>
                 </div>
 
             </article>
