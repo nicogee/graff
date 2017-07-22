@@ -25,7 +25,9 @@ Template Name: Work
                   <div class="work-image">
                     <div class="browser-top">
                       <span class="browser-buttons"></span>
-                      <span class="browser-address"></span>
+                      <span class="browser-address">
+                        <?php the_sub_field('work_link_url') ?>
+                      </span>
                       <span class="browser-menu">|||</span>
                     </div>
                     <img src="<?php the_sub_field('work_image'); ?>">
@@ -34,7 +36,7 @@ Template Name: Work
                 <div class="work-body">
                   <h2 class="work-title"><?php the_sub_field('work_title') ?></h2>
                   <?php the_sub_field('work_description') ?>
-                  <p><a href="<?php the_sub_field('work_link_url') ?>"><?php the_sub_field('work_link_url') ?></a></p>
+                  <p><a href="<?php the_sub_field('work_link_url') ?>">visit website &raquo;</a></p>
                 </div>
 
             </article>
