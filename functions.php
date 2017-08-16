@@ -68,7 +68,7 @@ function the_category_list() {
   echo rtrim($cats_list, ', ');
 }
 
-
+//taken from https://code.tutsplus.com/articles/creating-a-simple-contact-form-for-simple-needs--wp-27893
 function graff_contact_form( $atts ) {
  
     extract( shortcode_atts( array(
